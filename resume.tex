@@ -1,0 +1,240 @@
+%-------------------------
+% Resume in Latex
+% Author : Juan Pinto
+% Based off of: https://github.com/jakegut/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Juan D. Pinto} \\ \vspace{1pt}
+    \small 801-228-7184 $|$
+    \href{mailto:juan@jdpinto.com}{juan@jdpinto.com} $|$
+    \href{https://jdpinto.com}{jdpinto.com} %$|$
+    % \href{https://www.linkedin.com/in/juandpinto/}{\underline{linkedin.com/in/juandpinto}} $|$
+    % \href{https://github.com/juandpinto}{\underline{github.com/juandpinto}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Illinois Urbana-Champaign}{Urbana, IL}
+      {Ph.D. in Educational Data Science}{Aug 2020 -- Jul 2025}
+    \resumeSubheading
+      {University of Michigan}{Ann Arbor, MI}
+      {M.A. in Design and Technologies for Learning}{Aug 2019 -- July 2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Learner Modeling Graduate Research Assistant}{Aug 2023 -- Present}
+      {NSF AI Institute for Inclusive Intelligent Technologies for Education (INVITE)}{Urbana, IL}
+      \resumeItemListStart
+        % \resumeItem{Participated as a core member of the \emph{student modeling} team}
+        \resumeItem{Developed predictive models of student non-cognitive skills and behaviors}
+        \resumeItem{Conducted cleaning and analyses on large-scale educational datasets from varied digital platforms}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Graduate Research Assistant}{Sep 2020 -- Present}
+      {Human-Centered Educational Data Science Lab (HEDS)}{Urbana, IL}
+      \resumeItemListStart
+        \resumeItem{Led and participated in various research projects in the fields of \emph{learning analytics} and \emph{educational data mining}}
+        \resumeItem{Developed predictive and inferential models of student behaviors, with an emphasis on explainability}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Ida Lawrence Research Intern}{Jun 2024 -- Jul 2024}
+      {ETS Research Institute}{Princeton, NJ}
+      \resumeItemListStart
+        \resumeItem{Developed simple interpretable models (for ensembling) that detect student disengagement in a reading app}
+        \resumeItem{Validated models using accuracy, on-task behavior, and book preferences}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Interpretable Neural Network for Learner Behavior Detection} $|$ \emph{Python, PyTorch}}{}%{Apr 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed a convolutional neural network for detecting gaming-the-system behavior in education}
+            \resumeItem{Emphasized interpretable-by-design approach via loss-term regularization and novel thresholding mechanism}
+            \resumeItem{Demonstrated that the model provides fully interpretable explanations faithful to its learned knowledge}
+            \resumeItem{Evaluated the model's performance and explainability against human expert-identified patterns}
+            % \resumeItem{Developed a convolutional neural network to detect learner behaviors}
+            % \resumeItem{Designed model constraints to simplify inference and align learned patterns with human intuition}
+            % \resumeItem{Achieved comparable accuracy with previously published models}
+            % \resumeItem{Evaluated faithfulness and intelligibility of the model's explanations using human subjects}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Evaluating LLMs for Debugging Strategy Classification} $|$ \emph{Python}}{}
+          \resumeItemListStart
+            \resumeItem{Developed pipeline for systematic LLM prompting across different dimensions, such as \emph{chain-of-thought}, \emph{zero-} vs. \emph{few-shot}, \emph{single-} vs. \emph{multi-label}, \emph{reasoning}, and \emph{fine-tuned}}
+            \resumeItem{Outperformed baseline methods in classifying students' debugging strategies}
+            \resumeItem{Improved annotation efficiency and minority class detection in student code}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Weight-Based Modeling for Student Performance Prediction} $|$ \emph{Python, Scikit-learn, PyTorch, TensorFlow}}{}
+          \resumeItemListStart
+            \resumeItem{Developed weighting schemes to predict student performance using programming traces}
+            \resumeItem{Designed similarity metrics based on code, problem prompts, and struggling patterns}
+            \resumeItem{Showed that \emph{source code} and \emph{struggling pattern} similarity, along with \emph{problem order}, improved prediction accuracy}
+            \resumeItem{Demonstrated that logistic regression with weighting schemes matched deep-learning performance}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Modeling Student Performance Using Measures of Persistence} $|$ \emph{Python, Scikit-learn}}{}%{Nov 2020 -- Apr 2021}
+          \resumeItemListStart
+            \resumeItem{Developed a random forest model to predict student quiz performance}
+            \resumeItem{Conducted careful feature engineering based on previously studied elements of student persistence}
+            \resumeItem{Analyzed features and their interactions using SHAP values}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Epistemic Network Analysis of CS Students' Debugging Behavior} $|$ \emph{R}}{}%{Jan 2024 -- May 2024}
+          \resumeItemListStart
+            \resumeItem{Analyzed debugging behaviors in novice programmers using Epistemic Network Analysis (ENA)}
+            \resumeItem{Identified key constituents of the debugging process based on expert interpretation of student behaviors}
+            \resumeItem{Compared debugging strategies between students with different prior programming experience}
+            \resumeItem{Investigated how debugging behaviors evolved over time as students gained experience in a CS1 course}
+          \resumeItemListEnd
+
+    %   \resumeProjectHeading
+    %       {\textbf{Micro-Models of Student Engagement} $|$ \emph{Python, Scikit-learn}}{}
+    %       \resumeItemListStart
+    %         \resumeItem{Developed simple interpretable models (for ensembling) that detect student disengagement in a reading app}
+    %         \resumeItem{Analyzed response times and task delays as disengagement signals}
+    %         \resumeItem{Validated models using accuracy, on-task behavior, and book preferences}
+    %       \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Data Analysis \& Visualization}{: Python (NumPy, Pandas, Matplotlib, Seaborn), R, SQL} \\
+    %  \textbf{Data Visualization}{: Matplotlib, Seaborn} \\
+     \textbf{Machine Learning \& AI}{: Scikit-learn, PyTorch, Tensorflow, Keras} \\
+     \textbf{Web Programming}{: HTML, CSS, Javascript, Hugo, Jekyll} \\
+    \textbf{Other}{: Git, \LaTeX, Adobe Creative Cloud (Photoshop, Illustrator)}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
